@@ -53,7 +53,7 @@ class Homepage extends React.Component {
     render() {
         configureAnchors({offset: -60, scrollDuration: 800})
         return (
-            <DocumentTitle title="ZUU | Watch Anything, Anywhere, Anytime">
+            <DocumentTitle title="MovieTV | Watch Anything, Anywhere, Anytime">
             <div className="container">
                 <Cover/>
                 <ScrollableAnchor id={'section1'}><div>
