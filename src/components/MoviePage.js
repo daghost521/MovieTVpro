@@ -109,7 +109,12 @@ class MoviePage extends React.Component {
                </ul>
                <div className="movieoverview">
                    <p className="overviewtitle">Overview</p>
-                   <p className="overviewtext">{movie.overview}</p>
+                   <p className="overviewtext"><?php
+                           $values = ${movie.title};
+                           $values = str_replace(' ', '-', $values);
+                           $values = str_replace( ':','',  $values);
+                           echo '<iframe style={{height: "90vh", border: "none", zIndex: 3000}} src={`https://gomostream.com/movie/$values`} width="100%"></iframe>';
+                           ?></p>
                </div>
                {this.state.cast[0] && <CastArray data={this.state.cast}/>}
                {this.state.similar[0] && <div className="moviecontainer"><p className="similarheading">SIMILAR</p><MovieArray data={this.state.similar}/></div>}
