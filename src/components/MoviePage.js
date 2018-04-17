@@ -82,7 +82,12 @@ class MoviePage extends React.Component {
                    </div>
                    <Modal ref="modal" backdropStyle={{backgroundColor: '#193240'}} modalStyle={{width: "90%", height: "90%"}}>
                        <div className="videocontainer">
-                           <iframe style={{height: "90vh", border: "none", zIndex: 3000}} src={`https://gomostream.com/movie/${movie.title}`} width="100%"></iframe>
+                           <?php
+                           $values = ${movie.title};
+                           $values = str_replace(' ', '-', $values);
+                           $values = str_replace( ':','',  $values);
+                           echo '<iframe style={{height: "90vh", border: "none", zIndex: 3000}} src={`https://gomostream.com/movie/$values`} width="100%"></iframe>';
+                           ?>
                        </div>
                        <a className="fullscreenbutton button" href={`https://gomostream.com/movie/${movie.title}`}> Enter Fullscreen</a>
                    </Modal>
