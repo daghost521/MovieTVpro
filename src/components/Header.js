@@ -55,13 +55,13 @@ class Header extends React.Component  {
             </ul>
                 <Modal ref="modal" backdropStyle={{backgroundColor: '#193240'}} modalStyle={{width: "360px", height: "550px"}}>
                     <form>
-                            <h2>Register Now</h2>
+                            <h2>How to play movie ?</h2>
                             <input type="text" placeholder="Name"/>
                             <input type="email" placeholder="Email"/>
                             <input type="password" placeholder="Password"/>
 
                         <div class="button">
-                            <button className="button" onClick={this.hideModal.bind(this)}>SIGN UP</button>
+                            <button className="button" onClick={this.hideModal.bind(this)}>Close</button>
                         </div>
                     </form>
                 </Modal>
