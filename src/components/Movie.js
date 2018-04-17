@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 
 const Movie = props => {
-    let pagelink = "/movie/" + props.movie.id
+    let pagelink = "/movie/" + props.movie.title
 
     return (
         <li className="movie-item">
