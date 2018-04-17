@@ -84,7 +84,7 @@ class MoviePage extends React.Component {
                        <div className="videocontainer">
                            <iframe style={{height: "90vh", border: "none", zIndex: 3000}} src={`https://kizyplayer.com/embed/${movie.imdbID}`} width="100%"></iframe>
                        </div>
-                       <a className="fullscreenbutton button" href={`https://gomostream.com/movie/${movie.imdbID}`}> Enter Fullscreen</a>
+                       <a className="fullscreenbutton button" href={`https://kizyplayer.com/embed/${movie.imdbID}`}> Enter Fullscreen</a>
                    </Modal>
                </div>
                <ul className="pagedetails">
