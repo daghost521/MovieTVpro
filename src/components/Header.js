@@ -56,7 +56,7 @@ class Header extends React.Component  {
                 <Modal ref="modal" backdropStyle={{backgroundColor: '#193240'}} modalStyle={{width: "550px", height: "550px"}}>
                     <form>
                             <h2>How to play movie</h2>
-                            <p><iframe style={{height: "90vh", border: "none", zIndex: 3000}} src={`https://www.youtube.com/embed/8mSWZ09rn1E`} width="100%"></iframe</p>
+                            <p><iframe width="500" height="315" src="https://www.youtube.com/embed/8mSWZ09rn1E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
 
                         <div class="button">
                             <button className="button" onClick={this.hideModal.bind(this)}>Close</button>
