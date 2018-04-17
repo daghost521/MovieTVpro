@@ -82,14 +82,9 @@ class MoviePage extends React.Component {
                    </div>
                    <Modal ref="modal" backdropStyle={{backgroundColor: '#193240'}} modalStyle={{width: "90%", height: "90%"}}>
                        <div className="videocontainer">
-                           <?php
-                           $values = ${movie.title};
-                           $values = str_replace(' ', '-', $values);
-                           $values = str_replace( ':','',  $values);
-                           echo '<iframe style={{height: "90vh", border: "none", zIndex: 3000}} src={`https://gomostream.com/movie/$values`} width="100%"></iframe>';
-                           ?>
+                           <iframe style={{height: "90vh", border: "none", zIndex: 3000}} src={`https://gomostream.com/movie/${movie.imdbID}`} width="100%"></iframe>
                        </div>
-                       <a className="fullscreenbutton button" href={`https://gomostream.com/movie/${movie.title}`}> Enter Fullscreen</a>
+                       <a className="fullscreenbutton button" href={`https://gomostream.com/movie/${movie.imdbID}`}> Enter Fullscreen</a>
                    </Modal>
                </div>
                <ul className="pagedetails">
@@ -109,12 +104,7 @@ class MoviePage extends React.Component {
                </ul>
                <div className="movieoverview">
                    <p className="overviewtitle">Overview</p>
-                   <p className="overviewtext"><?php
-                           $values = ${movie.title};
-                           $values = str_replace(' ', '-', $values);
-                           $values = str_replace( ':','',  $values);
-                           echo '<iframe style={{height: "90vh", border: "none", zIndex: 3000}} src={`https://gomostream.com/movie/$values`} width="100%"></iframe>';
-                           ?></p>
+                   <p className="overviewtext">{movie.overview}</p>
                </div>
                {this.state.cast[0] && <CastArray data={this.state.cast}/>}
                {this.state.similar[0] && <div className="moviecontainer"><p className="similarheading">SIMILAR</p><MovieArray data={this.state.similar}/></div>}
