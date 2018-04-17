@@ -109,14 +109,6 @@ class MoviePage extends React.Component {
                {this.state.cast[0] && <CastArray data={this.state.cast}/>}
                {this.state.similar[0] && <div className="moviecontainer"><p className="similarheading">SIMILAR</p><MovieArray data={this.state.similar}/></div>}
            </div>
-           <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-99982201-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-99982201-1');
-</script>     
            </DocumentTitle>
        )
    }
