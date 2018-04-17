@@ -1,4 +1,4 @@
-# zuu-movies
+# MovieTV
 **A React Application for interacting with the TMDb API**
 
-[zuu.io](https://zuu.io)
+[MovieTV.pro](http://Movietv.pro)
