@@ -51,11 +51,11 @@ class Header extends React.Component  {
                 <li><Link activeClassName="active" className="icon icon-fire" to="/"></Link></li>
                 <li><Link activeClassName="active" className="icon icon-combined-shape" to="/movie"></Link> </li>
                 <li><Link activeClassName="active" className="icon icon-search" to="/search"></Link></li>
-                <li className="signup" onClick={this.showModal.bind(this)}>How To Watch Movie</li>
+                <li className="signup" onClick={this.showModal.bind(this)}>FAQ</li>
             </ul>
                 <Modal ref="modal" backdropStyle={{backgroundColor: '#193240'}} modalStyle={{width: "360px", height: "550px"}}>
                     <form>
-                            <h2>How to play movie ?</h2>
+                            <h2>How to play movie</h2>
                             <input type="text" placeholder="Name"/>
                             <input type="email" placeholder="Email"/>
                             <input type="password" placeholder="Password"/>
