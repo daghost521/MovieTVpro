@@ -5,7 +5,7 @@ const Cover = () => {
     return (
         <div className="cover">
             <Header/>
-            
+            <h1>www.movietv.pro</h1>
 
         </div>
     )
