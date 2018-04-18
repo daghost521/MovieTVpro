@@ -23,7 +23,7 @@ a {
   position: relative;
   background: url("./bgimg.png") no-repeat center center;
   background-size: cover;
-  height: 100vh;
+  height: 50vh;
   width: 100%;
   transition: height 999999s;
 }
