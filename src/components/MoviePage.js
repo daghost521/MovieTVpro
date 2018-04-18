@@ -81,7 +81,7 @@ class MoviePage extends React.Component {
                        <i className="icon-play"></i>
                    </div>
                    <div className="playbutton">
-                       <p className="playnow">Download</p>
+                       <p className="playnow">Download Torrent</p>
                        <i className="icon-play"></i>
                    </div>
                    <Modal ref="modal" backdropStyle={{backgroundColor: '#193240'}} modalStyle={{width: "90%", height: "90%"}}>
