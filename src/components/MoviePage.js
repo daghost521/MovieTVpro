@@ -80,7 +80,7 @@ class MoviePage extends React.Component {
                        <p className="playnow">Play Now</p>
                        <i className="icon-play"></i>
                    </div>
-                   <div onClick={this.showModal.bind(this)} className="playbutton">
+                   <div className="playbutton">
                        <p className="playnow">Download</p>
                        <i className="icon-play"></i>
                    </div>
