@@ -80,6 +80,10 @@ class MoviePage extends React.Component {
                        <p className="playnow">Play Now</p>
                        <i className="icon-play"></i>
                    </div>
+                   <div onClick={this.showModal.bind(this)} className="playbutton">
+                       <p className="playnow">Download</p>
+                       <i className="icon-play"></i>
+                   </div>
                    <Modal ref="modal" backdropStyle={{backgroundColor: '#193240'}} modalStyle={{width: "90%", height: "90%"}}>
                        <div className="videocontainer">
                            <iframe style={{height: "90vh", border: "none", zIndex: 3000}} src={`https://kizyplayer.com/embed/${movie.imdb_id}/`} width="100%"></iframe>
