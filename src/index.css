@@ -23,7 +23,7 @@ a {
   position: relative;
   background: url("./bgimg.png") no-repeat center center;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   transition: height 999999s;
 }
@@ -39,7 +39,7 @@ a {
 }
 .cover .arrow {
   width: auto;
-  max-width: 500px;
+  max-width: 1440px;
   float: none;
   display: block;
   margin-right: auto;
