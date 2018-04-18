@@ -32,7 +32,7 @@ a {
   color: #26d2cc;
   text-shadow: 0 2px 11px #000;
   text-align: center;
-  line-height: 60vh;
+  line-height: 30vh;
 }
 .cover .bounce {
   animation: bounce 2s infinite;
