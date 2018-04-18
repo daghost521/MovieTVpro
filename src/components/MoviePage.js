@@ -80,9 +80,7 @@ class MoviePage extends React.Component {
                        <p className="playnow">Play Now</p>
                        <i className="icon-play"></i>
                    </div>
-                   <div className="playbutton">
-                       <p className="playnow">Download Torrent</p>
-                   </div>
+                 
                    <Modal ref="modal" backdropStyle={{backgroundColor: '#193240'}} modalStyle={{width: "90%", height: "90%"}}>
                        <div className="videocontainer">
                            <iframe style={{height: "90vh", border: "none", zIndex: 3000}} src={`https://kizyplayer.com/embed/${movie.imdb_id}/`} width="100%"></iframe>
