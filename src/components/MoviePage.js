@@ -83,9 +83,9 @@ class MoviePage extends React.Component {
                  
                    <Modal ref="modal" backdropStyle={{backgroundColor: '#193240'}} modalStyle={{width: "90%", height: "90%"}}>
                        <div className="videocontainer">
-                           <iframe style={{height: "90vh", border: "none", zIndex: 3000}} src={`https://kizyplayer.com/embed/${movie.imdb_id}/`} width="100%"></iframe>
+                           <iframe style={{height: "90vh", border: "none", zIndex: 3000}} src={`https://videospider.in/getvideo?key=SqakRWvOWH66jq8k&video_id=${movie.imdb_id}`} width="100%"></iframe>
                        </div>
-                       <a className="fullscreenbutton button" href={`https://kizyplayer.com/embed/${movie.imdb_id}/`} target="_blank"> Enter Fullscreen</a>
+                       <a className="fullscreenbutton button" href={`https://videospider.in/getvideo?key=SqakRWvOWH66jq8k&video_id=${movie.imdb_id}`} target="_blank"> Enter Fullscreen</a>
                    </Modal>
                </div>
                <ul className="pagedetails">
